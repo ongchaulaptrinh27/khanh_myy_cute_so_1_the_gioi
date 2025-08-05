@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mật khẩu tình iu 💖</title>
+  <style>
+    body {
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background: linear-gradient(135deg, #ffd1dc, #ffe4e1);
+      text-align: center;
+      padding: 50px;
+      color: #d6336c;
+    }
+
+    .box {
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      display: inline-block;
+    }
+
+    input {
+      padding: 10px;
+      border-radius: 10px;
+      border: 1px solid pink;
+      margin: 10px;
+      font-size: 16px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #ff69b4;
+      color: white;
+      border: none;
+      border-radius: 15px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #ff1493;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1>🔐 Nhập mật khẩu để vào thế giới tình iu 💕</h1>
+    <input type="password" id="password" placeholder="Nhập mật khẩu..." />
+    <br />
+    <button onclick="checkPassword()">Vào thui 💘</button>
+  </div>
+
+  <script>
+    function checkPassword() {
+      const correctPassword = "kmyycuteso1tgioi";
+      const userInput = document.getElementById("password").value;
+
+      if (userInput === correctPassword) {
+        // Nếu đúng, chuyển sang index1.html
+        window.location.href = "index1.html";
+      } else {
+        alert("Sai mật khẩu òi 😢 Thử lại đi nha!");
+      }
+    }
+  </script>
+</body>
+</html>
